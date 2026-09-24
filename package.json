@@ -1,0 +1,19 @@
+{
+  "name": "conduit-playwright",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep \"\\[smoke\\]\"",
+    "test:regression": "playwright test --grep \"\\[regression\\]\"",
+    "test:negative": "playwright test --grep \"\\[negative\\]\"",
+    "test:auth": "playwright test --grep \"\\[auth\\]\"",
+    "test:articles": "playwright test --grep \"\\[articles\\]\"",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^26.6.1",
+    "typescript": "^5.0.0"
+  }
+}
